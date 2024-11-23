@@ -1,9 +1,9 @@
 from datetime import datetime, timedelta
-from management_system.src.repositories.repositories_data import File
-from management_system.src.services.estoque import Estoque
-from management_system.src.utils.data_validation import Valid
-from management_system.src.utils.id_generator import Id
-from management_system.src.interfaces.ipedido import IPedido
+from src.repositories.repositories_data import File
+from src.services.estoque import Estoque
+from src.utils.data_validation import Valid
+from src.utils.id_generator import Id
+from src.interfaces.ipedido import IPedido
 
 
 class Pedidos:

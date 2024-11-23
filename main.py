@@ -1,5 +1,5 @@
-from management_system.src.system import System
-from management_system.src.utils.data_validation import Valid
+from src.system import System
+from src.utils.data_validation import Valid
 
 
 while True:

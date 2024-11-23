@@ -1,9 +1,8 @@
-from management_system.src.interfaces import IPedido
-from management_system.src.models.pedidos import Pedido
-from management_system.src.utils.data_validation import Valid
-from management_system.src.models.clientes import Cliente, Fornecedor
-from management_system.src.models.produtos import Mercadoria, Materia_Prima
-from management_system.src.services import Clientes, Estoque, Pedidos
+from src.models.pedidos import Pedido
+from src.utils.data_validation import Valid
+from src.models.clientes import Cliente, Fornecedor
+from src.models.produtos import Mercadoria, Materia_Prima
+from src.services import Clientes, Estoque, Pedidos
 
 lista_clientes = [Cliente(), Fornecedor()]
 lista_produtos = [Mercadoria(), Materia_Prima()]

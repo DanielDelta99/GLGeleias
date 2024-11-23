@@ -1,8 +1,8 @@
-from management_system.src.interfaces.icliente import ICliente
+from src.interfaces.icliente import ICliente
 
 
-class Fornecedor(ICliente):
-    def __init__(self, idd: int = 0, tipo: str = 'Fornecedor', nome: str = 'Desconhecido', cpf: str = '000', endereco: str = 'Sem endereço', saldo: float = 0):
+class Cliente(ICliente):
+    def __init__(self, idd: int = 0, tipo: str = 'Cliente', nome: str = 'Desconhecido', cpf: str = '000', endereco: str = 'Sem endereço' , saldo: float = 0):
         self._idd = idd
         self._tipo = tipo
         self._nome = nome
@@ -43,7 +43,7 @@ class Fornecedor(ICliente):
         return self._cpf
 
     @cpf.setter
-    def cpf(self, cpf):
+    def cpf(self,cpf):
         self._cpf = cpf
 
 
@@ -67,15 +67,16 @@ class Fornecedor(ICliente):
 
     @staticmethod
     def save_nome():
-        return 'C:/Users/Daniel/PycharmProjects/JLGeleias_2.2/management_system/data/clientes/save_fornecedor.pickle'
-
+        return 'C:/Users/Daniel/PycharmProjects/JLGeleias_2.2/management_system/data/clientes/save_cliente.pickle'
 
 
     @classmethod
-    def cadastrar(cls, idd: int = 0, tipo: str = 'Fornecedor', nome: str = 'Desconhecido', cpf: str = '000',
-                  endereco: str = 'Sem endereço', saldo: float = 0) -> ICliente:
+    def cadastrar(cls, idd: int = 0, tipo: str = 'Cliente', nome: str = 'Desconhecido', cpf: str = '000',
+                  endereco: str = 'Sem endereço',
+                  saldo: float = 0) -> ICliente:
         return cls(idd, tipo, nome, cpf, endereco)
 
 
     def detalhes(self):
-        print(f'Id: {self.idd}\nNome: {self.nome}\nCPF: {self.cpf}\nEndereço: {self.endereco}\nSaldo: R$ {self.saldo:.2f}')
+       return  f'Id: {self.idd}\nNome: {self.nome}\nCPF: {self.cpf}\nEndereço: {self.endereco}\nSaldo: R$ {self.saldo:.2f}'
+

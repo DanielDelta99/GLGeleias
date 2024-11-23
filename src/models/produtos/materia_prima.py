@@ -1,4 +1,4 @@
-from management_system.src.interfaces.iproduto import IProduto
+from src.interfaces.iproduto import IProduto
 
 
 class Materia_Prima(IProduto):

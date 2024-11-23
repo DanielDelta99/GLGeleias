@@ -1,7 +1,7 @@
-from management_system.src.repositories.repositories_data import File
-from management_system.src.utils.data_validation import Valid
-from management_system.src.utils.id_generator import Id
-from management_system.src.interfaces.icliente import ICliente
+from src.repositories.repositories_data import File
+from src.utils.data_validation import Valid
+from src.utils.id_generator import Id
+from src.interfaces.icliente import ICliente
 
 
 class Clientes:

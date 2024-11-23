@@ -1,5 +1,4 @@
-from datetime import datetime
-from management_system.src.interfaces.ipedido import IPedido
+from src.interfaces.ipedido import IPedido
 
 
 class Pedido(IPedido):
