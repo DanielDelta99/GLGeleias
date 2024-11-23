@@ -1,0 +1,5 @@
+criar class de compras e vendas.
+criar class fabrica:
+atribultos: producao/tempo, saldo, dividendos tanto a receber quanto a pagar.
+
+criar classe vendas que interage com saldo de clientes.

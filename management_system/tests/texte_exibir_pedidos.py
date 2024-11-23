@@ -1,0 +1,7 @@
+print('-'*60)
+print(f'{'n°':3}|{'nome':25}|{'valor':10}|{'data':10}|{'status':10}')
+print('-'*60)
+print(len('Daniel Alves da Silva'))
+print(len('R$ 2500,00'))
+print(len('12/10/2024'))
+print(len('Em andamento'))
